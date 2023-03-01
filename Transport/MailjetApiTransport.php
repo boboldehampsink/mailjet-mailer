@@ -78,7 +78,7 @@ class MailjetApiTransport extends AbstractApiTransport
             'http_version' => 1.1,
             'extra' => [
                 'curl' => [
-                    \CURLOPT_SSLVERSION => \CURL_SSLVERSION_MAX_TLSv1_1,
+                    \CURLOPT_SSLVERSION => \CURL_SSLVERSION_MAX_TLSv1_2,
                 ],
             ],
         ]);
