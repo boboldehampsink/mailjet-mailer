@@ -75,6 +75,7 @@ class MailjetApiTransport extends AbstractApiTransport
             ],
             'auth_basic' => $this->publicKey.':'.$this->privateKey,
             'json' => $this->getPayload($email, $envelope),
+            'http_version' => 1.1,
         ]);
 
         try {
